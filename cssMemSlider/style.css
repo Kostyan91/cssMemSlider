@@ -4,8 +4,7 @@
   box-sizing: border-box;
 }
 
-
-body{
+body {
   background: black;
 }
 
@@ -23,70 +22,72 @@ img {
   border-radius: 0.5rem;
 }
 
-.slide {
-  padding: 3rem ;
-}
-
 .dots {
   padding: 1rem;
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-   .dot {
-    width: 1.7rem;
-    height: 1.7rem;
-    border-radius: 50%;
-    background-color:red;
-    color:black;
-    margin-right: 30px;
-    cursor: pointer;
-    opacity: 0.8;
-    transition: all 1s ;
-  }
+  display: flex;
+  justify-content: flex-end;
+}
 
-  .dot:hover{
-    background-color: black;
-    border: 4px solid blue;
-    transition: all 1s;
-    transform: scale(1.3);
-  } 
-  
-  input[name = "q"]{
-    position: absolute;
-    visibility: hidden;
-  }
+.dot {
+  display: inline-block;
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 50%;
+  background: red;
+  color: black;
+  margin-right: 1.8rem;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: all 1s;
+}
 
-  .slides{       
-    width: 500%;
-    display: flex;
-  }
-  
-  .slide{
-    scroll-snap-align: center;
-    width: 20%;
-    transition: all .8s ease;
-    /* overflow: hidden; */
-  } 
-  
-  
-  
-    #q1:checked ~ .s1 {
-      margin-left: 0;
-    }
-  
-    #q2:checked ~ .s1 {
-      margin-left: -20%;
-    }
-  
-    #q3:checked ~.s1{
-      margin-left: -40%;
-    }
-  
-    #q4:checked ~ .s1 {
-      margin-left: -60%;
-    } 
-  
-    #q5:checked ~  .s1 {
-      margin-left: -80%;
-    }
+.qq{
+width: 3rem;
+height: 3rem;
+cursor: pointer;
+}
+
+.dot:hover {
+  background: black;
+  border: 4px solid blue;
+  transition: all 1s;
+  transform: scale(1.3);
+}
+
+input[name="q"] {
+  width: 2rem;
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides {
+  width: 500%;
+  display: flex;
+}
+
+.slide {
+  scroll-snap-align: center;
+  width: 20%;
+  transition: all 0.8s ease;
+  padding: 3rem;
+}
+
+#q1:checked ~ .s1 {
+  margin-left: 0;
+}
+
+#q2:checked ~ .s1 {
+  margin-left: -20%;
+}
+
+#q3:checked ~ .s1 {
+  margin-left: -40%;
+}
+
+#q4:checked ~ .s1 {
+  margin-left: -60%;
+}
+
+#q5:checked ~ .s1 {
+  margin-left: -80%;
+}
