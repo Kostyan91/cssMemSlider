@@ -25,10 +25,11 @@ img {
 }
 
 .dot {
+  border-radius: 50%;
   cursor: pointer;
   width: 3.5rem;
   height: 3.5rem;
-  margin: 5px;
+  /* margin: 5px; */
   transition: all 0.5s ease;
   display: flex;
   justify-content: center;
@@ -43,7 +44,7 @@ img {
 }
 
 .dot:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .dot:hover .circle {
@@ -104,6 +105,21 @@ input[name="q"] {
 }
 
 
+input#q1:checked ~ .wrapper > .labels > label[for="q1"] > .circle {
+ background-color: red;
+}
+
+input#q2:checked ~ .wrapper > .labels > label[for="q2"] > .circle{
+  background-color: red;
+}
+
+input#q3:checked ~ .wrapper > .labels > label[for="q3"] > .circle{
+  background-color: red;
+}
+
+input#q4:checked ~ .wrapper > .labels > label[for="q4"] > .circle{
+  background-color: red;
+}
 
 
 
@@ -141,6 +157,8 @@ input[name="q"] {
   width: 100%;
 }
 
+
+
 @media (max-width: 960px) {
   .slider {
       max-width: 100vw;
@@ -158,7 +176,7 @@ input[name="q"] {
      
   }
   .text {
-      font-size: 2.5rem;
+      font-size: 2rem;
       text-align: center;
       padding: 1rem;
   }
