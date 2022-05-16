@@ -29,7 +29,6 @@ img {
   cursor: pointer;
   width: 3.5rem;
   height: 3.5rem;
-  /* margin: 5px; */
   transition: all 0.5s ease;
   display: flex;
   justify-content: center;
@@ -91,15 +90,12 @@ input[name="q"] {
 #q1:checked~.slides {
   margin-left: 0%;
 }
-
 #q2:checked~.slides {
   margin-left: -100%;
 }
-
 #q3:checked~.slides {
   margin-left: -200%;
 }
-
 #q4:checked~.slides {
   margin-left: -300%;
 }
@@ -108,15 +104,12 @@ input[name="q"] {
 input#q1:checked ~ .wrapper > .labels > label[for="q1"] > .circle {
  background-color: red;
 }
-
 input#q2:checked ~ .wrapper > .labels > label[for="q2"] > .circle{
   background-color: red;
 }
-
 input#q3:checked ~ .wrapper > .labels > label[for="q3"] > .circle{
   background-color: red;
 }
-
 input#q4:checked ~ .wrapper > .labels > label[for="q4"] > .circle{
   background-color: red;
 }
@@ -126,15 +119,12 @@ input#q4:checked ~ .wrapper > .labels > label[for="q4"] > .circle{
 #q1:checked~.wrapper .wrapper-slider .text-cont {
   margin-left: 0;
 }
-
 #q2:checked~.wrapper .wrapper-slider .text-cont {
   margin-left: -100%;
 }
-
 #q3:checked~.wrapper .wrapper-slider .text-cont {
   margin-left: -200%;
 }
-
 #q4:checked~.wrapper .wrapper-slider .text-cont {
   margin-left: -300%;
 }
@@ -156,8 +146,6 @@ input#q4:checked ~ .wrapper > .labels > label[for="q4"] > .circle{
   font-size: 3rem;
   width: 100%;
 }
-
-
 
 @media (max-width: 960px) {
   .slider {
